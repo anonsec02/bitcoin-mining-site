@@ -48,13 +48,58 @@ button {
     border-radius: 8px;
 }
 
-/* تحسين الأزرار للشاشات الصغيرة */
 @media (max-width: 768px) {
-    button {
-        width: 100%; /* جعل الأزرار تأخذ عرض الشاشة */
-        font-size: 18px; /* تكبير النص */
-        padding: 12px;
+    body {
+        font-size: 14px; /* تصغير حجم النص */
     }
+
+    .container {
+        width: 95%; /* تقليل العرض لتناسب الشاشة */
+        padding: 10px;
+    }
+
+    #contact-btn {
+        padding: 8px 15px; /* تصغير حجم زر "تواصل معنا" */
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column; /* ترتيب العناصر عموديًا بدلاً من أفقيًا */
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .main-content {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #contact-btn {
+        width: 100%; /* تمديد الزر ليكون متناسقًا مع الشاشة */
+        max-width: 250px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 button:hover {
@@ -157,12 +202,4 @@ input[type="text"]:focus {
 .container {
     width: 90%;
     margin: auto;
-}
-
-/* تحسين التخطيط على الشاشات الصغيرة */
-@media (max-width: 768px) {
-    .container {
-        width: 100%; /* استخدام العرض الكامل */
-        padding: 10px;
-    }
 }
