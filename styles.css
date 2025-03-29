@@ -42,15 +42,19 @@ header {
 }
 
 button {
-    background-color: #28a745; /* اللون الأخضر الداكن */
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s;
+    width: 200px; /* حجم موحد للأزرار */
+    padding: 10px;
+    font-size: 16px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين الأزرار للشاشات الصغيرة */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* جعل الأزرار تأخذ عرض الشاشة */
+        font-size: 18px; /* تكبير النص */
+        padding: 12px;
+    }
 }
 
 button:hover {
@@ -149,4 +153,16 @@ input[type="text"]:focus {
 #contact-btn:hover {
     background-color: #0056b3;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* تحسين التخطيط على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* استخدام العرض الكامل */
+        padding: 10px;
+    }
 }
