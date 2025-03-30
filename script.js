@@ -69,3 +69,12 @@ document.getElementById("confirm-withdraw").addEventListener("click", function()
 document.getElementById("contact-btn").addEventListener("click", function() {
     window.open("https://t.me/raone_002", "_blank"); // استبدل "your_telegram_username" باسم المستخدم أو رابط البوت الخاص بك
 });
+// زر نبذة عنا
+document.getElementById("about-btn").addEventListener("click", function() {
+    document.getElementById("about-modal").style.display = "block";
+});
+
+// زر إغلاق النافذة
+document.getElementById("close-about").addEventListener("click", function() {
+    document.getElementById("about-modal").style.display = "none";
+});
