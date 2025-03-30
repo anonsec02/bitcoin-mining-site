@@ -208,3 +208,51 @@ input[type="text"]:focus {
     width: 90%;
     margin: auto;
 }
+/* زر نبذة عنا */
+#about-btn {
+    position: fixed;
+    bottom: 20px; /* جعله في أسفل الشاشة */
+    right: 20px; /* محاذاته إلى اليمين */
+    background-color: #FFA500; /* لون برتقالي جذاب */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation: glowing 2s infinite; /* تأثير بصري */
+}
+
+#about-btn:hover {
+    background-color: #FF8C00; /* لون عند التحويم */
+}
+
+/* النافذة المنبثقة */
+#about-modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* زر إغلاق النافذة */
+#close-about {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
