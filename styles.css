@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #121212;
     color: white;
@@ -213,7 +213,7 @@ input[type="text"]:focus {
     position: fixed;
     bottom: 20px; /* جعله في أسفل الشاشة */
     right: 20px; /* محاذاته إلى اليمين */
-    background-color: #FFA500; /* لون برتقالي جذاب */
+    background-color: #A0522D; /* لون برتقالي جذاب */
     color: white;
     padding: 10px 20px;
     border: none;
