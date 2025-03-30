@@ -69,12 +69,26 @@ document.getElementById("confirm-withdraw").addEventListener("click", function()
 document.getElementById("contact-btn").addEventListener("click", function() {
     window.open("https://t.me/raone_002", "_blank"); // استبدل "your_telegram_username" باسم المستخدم أو رابط البوت الخاص بك
 });
-// زر نبذة عنا
-document.getElementById("about-btn").addEventListener("click", function() {
-    document.getElementById("about-modal").style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", function () {
+    // الحصول على العناصر
+    var aboutBtn = document.getElementById("about-btn");
+    var aboutModal = document.getElementById("about-modal");
+    var closeAbout = document.getElementById("close-about");
 
-// زر إغلاق النافذة
-document.getElementById("close-about").addEventListener("click", function() {
-    document.getElementById("about-modal").style.display = "none";
+    // عند الضغط على زر نبذة عنا
+    aboutBtn.addEventListener("click", function () {
+        aboutModal.style.display = "block";
+    });
+
+    // عند الضغط على زر الإغلاق
+    closeAbout.addEventListener("click", function () {
+        aboutModal.style.display = "none";
+    });
+
+    // عند الضغط خارج النافذة، يتم إغلاقها
+    window.addEventListener("click", function (event) {
+        if (event.target === aboutModal) {
+            aboutModal.style.display = "none";
+        }
+    });
 });
