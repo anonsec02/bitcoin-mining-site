@@ -227,10 +227,9 @@ input[type="text"]:focus {
 #about-btn:hover {
     background-color: #FF8C00; /* لون عند التحويم */
 }
-
-/* النافذة المنبثقة */
+/* تنسيق النافذة المنبثقة */
 #about-modal {
-    display: none;
+    display: none; /* إخفاء النافذة افتراضيًا */
     position: fixed;
     left: 50%;
     top: 50%;
@@ -239,8 +238,13 @@ input[type="text"]:focus {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+    z-index: 1000;
 }
 
+/* تنسيق المحتوى داخل النافذة */
 .modal-content {
     background-color: #222;
     padding: 15px;
