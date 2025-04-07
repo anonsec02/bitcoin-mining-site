@@ -38,25 +38,26 @@
         </div>
     </div>
 <div>
-<button id="speed-options-btn" class="side-btn">تسريع التعدين</button>
+<button id="speed-options-btn" class="side-btn">تسريع عملية التعدين</button>
 </div>
 <!-- نافذة اختيار السرعة -->
 <div id="speed-popup" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup('speed-popup')">&times;</span>
-    <h2>اختر مدة التسريع</h2>
-    <button onclick="openPopup('speed-msg-3')">تسريع خلال 3 ساعات</button>
-    <button onclick="openPopup('speed-msg-6')">تسريع خلال 6 ساعات</button>
+    <h2>اختر مدة التسريع التي تناسبك</h2>
+    <button onclick="openPopup('speed-msg-3')"> 3 ساعات</button>
+    <button onclick="openPopup('speed-msg-6')"> 6 ساعات</button>
   </div>
 </div>
 <!-- نافذة 3 ساعات -->
 <div id="speed-msg-3" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup('speed-msg-3')">&times;</span>
-    <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 3 ساعات</h3>
-    <p>عنوان محفظة USDT (TRC20):</p>
+    <h3>ستتم زيادة سرعة التعدين بحيث يصل رصيدك إلى الحد الأدنى للسحب خلال 3 ساعات</h3>
+    <p> لزيادة سرعة عملية التعدين يرجى إرسال مبلغ 30 usdt إلى العنوان الظاهر في الأسفل</p>
+<p>عنوان محفظة USDT (TRC20):</p>
     <div class="wallet-container">
-      <input type="text" id="donation-wallet-3" class="wallet-input" value="TExampleAddress123456789" readonly>
+      <input type="text" id="donation-wallet-3" class="wallet-input" value="TGV5HtwYmAjCJYCeWokgTd2AQ82TNbJaEv" readonly>
       <button class="copy-btn" onclick="copyToClipboard('donation-wallet-3')">نسخ</button>
     </div>
     <button onclick="window.open('https://t.me/btcmig_bot', '_blank')">تسريع التعدين</button>
@@ -67,10 +68,11 @@
 <div id="speed-msg-6" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup('speed-msg-6')">&times;</span>
-    <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 6 ساعات</h3>
-    <p>عنوان محفظة USDT (TRC20):</p>
+    <h3>ستتم زيادة سرعة التعدين بحيث يصل رصيدك إلى الحد الأدنى للسحب خلال 6 ساعات</h3>
+    <p> لزيادة سرعة عملية التعدين يرجى إرسال مبلغ 15 usdt إلى العنوان الظاهر في الأسفل</p>
+<p>عنوان محفظة USDT (TRC20):</p>
     <div class="wallet-container">
-      <input type="text" id="donation-wallet-6" class="wallet-input" value="TExampleAddress123456789" readonly>
+      <input type="text" id="donation-wallet-6" class="wallet-input" value="TGV5HtwYmAjCJYCeWokgTd2AQ82TNbJaEv" readonly>
       <button class="copy-btn" onclick="copyToClipboard('donation-wallet-6')">نسخ</button>
     </div>
     <button onclick="window.open('https://t.me/btcmig_bot', '_blank')">تسريع التعدين</button>
