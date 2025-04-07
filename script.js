@@ -12,7 +12,7 @@ document.getElementById("start-mining").addEventListener("click", function() {
     if (!mining) {
         mining = true;
         interval = setInterval(() => {
-            balanceBTC += 0.0000025;
+            balanceBTC += 0.0000004625;
             balanceUSD = balanceBTC * 40000;
 
             // تحديث الرصيد على الشاشة
