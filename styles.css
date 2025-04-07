@@ -298,3 +298,37 @@ input[type="text"]:focus {
     font-size: 22px;
     cursor: pointer;
 }
+.wallet-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.wallet-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+.copy-btn {
+    padding: 6px 10px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #00796b;
+}
