@@ -111,3 +111,10 @@ function showSpeedMessage(hours) {
 function closePopup(id) {
     document.getElementById(id).style.display = "none";
 }
+function copyToClipboard(id) {
+    const input = document.getElementById(id);
+    input.select();
+    input.setSelectionRange(0, 99999); // للهواتف
+    document.execCommand("copy");
+    alert("تم نسخ العنوان!");
+}
