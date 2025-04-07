@@ -340,6 +340,7 @@ input[type="text"]:focus {
 
 .wallet-input {
     flex: 1;
+    min-width: 200px; /* تضمن أن الحقل يكون بعرض كافٍ */
     padding: 8px;
     border: none;
     background: transparent;
@@ -357,8 +358,6 @@ input[type="text"]:focus {
     cursor: pointer;
     margin-left: 10px;
     transition: background-color 0.3s ease;
-}
-
-.copy-btn:hover {
-    background-color: #00796b;
+    width: auto; /* المهم هنا لضبط حجم الزر حسب النص */
+    flex-shrink: 0; /* يمنع تصغير الزر عند ضيق المساحة */
 }
