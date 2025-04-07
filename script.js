@@ -62,7 +62,7 @@ document.getElementById("confirm-withdraw").addEventListener("click", function()
         alert("الحد الأدنى للسحب هو (800$) رصيدك غير كاف للسحب");
         return;
     }
-    alert("مباشرة بعد دفع رسوم الإيجار سيصلك مبلغ أربحاك على محفظة البيتكوين الخاصة بك نشكرك على ثقتك و نقدر إختيارك وساطتنا لتعدين العملات الرقمية");
+    alert("مباشرة بعد دفع رسوم الإيجار سيصلك مبلغ أربحاك على محفظة البيتكوين الخاصة بك نشكرك على ثقتك و نقدر إختيارك موقعنا كوسيط لتعدين العملات الرقمية");
 });
 
 // إضافة رابط تيليجرام إلى زر "تواصل معنا"
@@ -134,3 +134,16 @@ function activateBoost3h() {
 // عند الضغط
 document.getElementById("boost-6h").addEventListener("click", activateBoost6h);
 document.getElementById("boost-3h").addEventListener("click", activateBoost3h);
+
+document.getElementById("speedup-btn").addEventListener("click", () => {
+    document.getElementById("speedup-popup").style.display = "block";
+});
+
+function showSpeedMessage(hours) {
+    closePopup('speedup-popup');
+    document.getElementById(`speed-msg-${hours}`).style.display = "block";
+}
+
+function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+}
