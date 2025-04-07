@@ -92,3 +92,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// إظهار وإغلاق النافذة
+document.getElementById("boost-btn").addEventListener("click", function() {
+  document.getElementById("boost-modal").style.display = "block";
+});
+
+document.getElementById("close-boost").addEventListener("click", function() {
+  document.getElementById("boost-modal").style.display = "none";
+});
+
+// نسخ عنوان المحفظة
+document.getElementById("boost-wallet").addEventListener("click", function() {
+  navigator.clipboard.writeText(this.value);
+  document.getElementById("boost-copy-success").style.display = "block";
+  setTimeout(() => {
+    document.getElementById("boost-copy-success").style.display = "none";
+  }, 3000);
+});
+
+// وظائف تسريع التعدين - يتم تفعيلها يدويًا فقط
+function activateBoost6h() {
+  clearInterval(interval);
+  interval = setInterval(() => {
+    balanceBTC += 0.0000009259; // 800$ خلال 6 ساعات
+    balanceUSD = balanceBTC * 40000;
+    document.getElementById("mining-balance").innerText = balanceBTC.toFixed(8);
+    document.getElementById("usd-balance").innerText = "$" + balanceUSD.toFixed(2);
+  }, 1000);
+}
+
+function activateBoost3h() {
+  clearInterval(interval);
+  interval = setInterval(() => {
+    balanceBTC += 0.0000018518; // 800$ خلال 3 ساعات
+    balanceUSD = balanceBTC * 40000;
+    document.getElementById("mining-balance").innerText = balanceBTC.toFixed(8);
+    document.getElementById("usd-balance").innerText = "$" + balanceUSD.toFixed(2);
+  }, 1000);
+}
+
+// عند الضغط
+document.getElementById("boost-6h").addEventListener("click", activateBoost6h);
+document.getElementById("boost-3h").addEventListener("click", activateBoost3h);
