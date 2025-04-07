@@ -37,21 +37,29 @@
             <button id="confirm-withdraw">طلب السحب</button>
         </div>
     </div>
-<!-- زر يظهر النافذة الأولى -->
-<button id="speedup-btn" class="floating-btn">تسريع التعدين</button>
+<!-- زر تسريع التعدين -->
+<button id="speed-options-btn" class="side-btn">تسريع التعدين</button>
+
+<!-- نافذة اختيار السرعة -->
+<div id="speed-popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('speed-popup')">&times;</span>
+    <h2>اختر مدة التسريع</h2>
+    <button onclick="openPopup('speed-msg-3')">تسريع خلال 3 ساعات</button>
+    <button onclick="openPopup('speed-msg-6')">تسريع خلال 6 ساعات</button>
+  </div>
+</div>
 
 <!-- نافذة 3 ساعات -->
 <div id="speed-msg-3" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup('speed-msg-3')">&times;</span>
     <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 3 ساعات</h3>
-    
     <p>عنوان محفظة USDT (TRC20):</p>
     <div class="wallet-container">
       <input type="text" id="donation-wallet-3" class="wallet-input" value="TExampleAddress123456789" readonly>
       <button class="copy-btn" onclick="copyToClipboard('donation-wallet-3')">نسخ</button>
     </div>
-
     <button onclick="window.open('https://t.me/YOUR_BOT_USERNAME', '_blank')">تسريع التعدين</button>
   </div>
 </div>
@@ -61,17 +69,14 @@
   <div class="popup-content">
     <span class="close" onclick="closePopup('speed-msg-6')">&times;</span>
     <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 6 ساعات</h3>
-    
     <p>عنوان محفظة USDT (TRC20):</p>
     <div class="wallet-container">
       <input type="text" id="donation-wallet-6" class="wallet-input" value="TExampleAddress123456789" readonly>
       <button class="copy-btn" onclick="copyToClipboard('donation-wallet-6')">نسخ</button>
     </div>
-
     <button onclick="window.open('https://t.me/YOUR_BOT_USERNAME', '_blank')">تسريع التعدين</button>
   </div>
 </div>
-
     <script src="script.js"></script>
     <!-- زر نبذة عنا -->
 <button id="about-btn">من نحن</button>
