@@ -67,7 +67,7 @@ document.getElementById("confirm-withdraw").addEventListener("click", function()
 
 // إضافة رابط تيليجرام إلى زر "تواصل معنا"
 document.getElementById("contact-btn").addEventListener("click", function() {
-    window.open("https://t.me/raone_002", "_blank"); // استبدل "your_telegram_username" باسم المستخدم أو رابط البوت الخاص بك
+    window.open("https://t.me/btcmig_bot", "_blank"); // استبدل "your_telegram_username" باسم المستخدم أو رابط البوت الخاص بك
 });
 document.addEventListener("DOMContentLoaded", function () {
     // الحصول على العناصر
