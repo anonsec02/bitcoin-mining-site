@@ -262,9 +262,10 @@ input[type="text"]:focus {
 }
 /* زر جانبي */
 #speed-options-btn {
-    position: fixed;
-    bottom: 100px;
-    right: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
     background-color: #673AB7;
     color: white;
     border: none;
