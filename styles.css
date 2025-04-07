@@ -260,40 +260,23 @@ input[type="text"]:focus {
     cursor: pointer;
     color: white;
 }
-
-.floating-btn {
-    position: fixed;
-    bottom: 80px;
-    right: 10px;
-    padding: 10px 16px;
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.floating-btn:hover {
-    transform: scale(1.05);
-}
-
 .popup {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
+    background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    max-width: 300px;
+    max-width: 90%;
+    width: 300px;
     text-align: center;
 }
 
-.popup-content h3 {
+.popup-content h3, .popup-content h2 {
     margin-bottom: 15px;
 }
 
@@ -307,14 +290,10 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.popup button:hover {
-    background-color: #45a049;
-}
-
 .popup .close {
     position: absolute;
     top: 5px;
-    right: 10px;
+    right: 15px;
     color: #aaa;
     font-size: 22px;
     cursor: pointer;
