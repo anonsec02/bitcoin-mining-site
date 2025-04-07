@@ -260,21 +260,21 @@ input[type="text"]:focus {
     cursor: pointer;
     color: white;
 }
-/* زر جانبي */
-#speed-options-btn {
+#speed-mining-btn {
     position: absolute;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 15px;
-    background-color: #673AB7;
-    color: white;
+    padding: 10px 20px;
+    background-color: #a3e7fc; /* لون مبدئي للجليد */
+    color: #003f5c;
     border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-    z-index: 500;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(163, 231, 252, 0.5);
+    transition: all 0.3s ease;
+    z-index: 500; /* أقل من 999 أو 1000 للنافذة */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
 }
 
 #speed-mining-btn:hover {
