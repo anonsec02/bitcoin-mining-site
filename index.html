@@ -36,6 +36,19 @@
             <p class="wallet-label">Bitcoin (BTC)</p>
             <input type="text" id="user-wallet" placeholder="أدخل عنوان محفظتك هنا">
             <button id="confirm-withdraw">طلب السحب</button>
+<div id="boost-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-boost">&times;</span>
+    <p class="wallet-label">عنوان محفظة التبرع (اضغط للنسخ)</p>
+    <input type="text" value="TRC20-USDT-ADDRESS" readonly id="boost-wallet">
+    <p id="boost-copy-success" class="copy-success">تم النسخ!</p>
+    <textarea placeholder="شرح الشروط والتعليمات" rows="4" style="width: 100%; margin-top: 10px;"></textarea>
+    <div style="margin-top: 15px;">
+      <button id="boost-6h" disabled>تسريع التعدين (6 ساعات)</button>
+      <button id="boost-3h" disabled>تسريع التعدين (3 ساعات)</button>
+    </div>
+  </div>
+</div>
         </div>
     </div>
     <script src="script.js"></script>
