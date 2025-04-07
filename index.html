@@ -38,17 +38,34 @@
             <button id="confirm-withdraw">طلب السحب</button>
         </div>
     </div>
-<div id="boost-modal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="close-boost">&times;</span>
-    <p class="wallet-label">عنوان محفظة التبرع (اضغط للنسخ)</p>
-    <input type="text" value="TRC20-USDT-ADDRESS" readonly id="boost-wallet">
-    <p id="boost-copy-success" class="copy-success">تم النسخ!</p>
-    <textarea placeholder="شرح الشروط والتعليمات" rows="4" style="width: 100%; margin-top: 10px;"></textarea>
-    <div style="margin-top: 15px;">
-      <button id="boost-6h" disabled>تسريع التعدين (6 ساعات)</button>
-      <button id="boost-3h" disabled>تسريع التعدين (3 ساعات)</button>
-    </div>
+<button id="speedup-btn" class="floating-btn">تسريع التعدين</button>
+
+<!-- نافذة التبرع -->
+<div id="speedup-popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('speedup-popup')">&times;</span>
+    <h2>تسريع التعدين</h2>
+    <p>يمكنك تسريع التعدين عبر الخيارات التالية:</p>
+
+    <button onclick="showSpeedMessage('3')">تسريع إلى 3 ساعات</button>
+    <button onclick="showSpeedMessage('6')">تسريع إلى 6 ساعات</button>
+  </div>
+</div>
+
+<!-- النوافذ المنبثقة لخيارات التسريع -->
+<div id="speed-msg-3" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('speed-msg-3')">&times;</span>
+    <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 3 ساعات</h3>
+    <button onclick="window.open('https://t.me/btcmig_bot', '_blank')">تسريع التعدين</button>
+  </div>
+</div>
+
+<div id="speed-msg-6" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('speed-msg-6')">&times;</span>
+    <h3>ستتم زيادة سرعة التعدين بحيث تصل إلى الحد الأدنى للسحب خلال 6 ساعات</h3>
+    <button onclick="window.open('https://t.me/btcmig_bot', '_blank')">تسريع التعدين</button>
   </div>
 </div>
     <script src="script.js"></script>
