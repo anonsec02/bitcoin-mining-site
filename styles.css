@@ -274,7 +274,7 @@ input[type="text"]:focus {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
-    z-index: 1000;
+    z-index: 500;
 }
 
 #speed-mining-btn:hover {
@@ -289,7 +289,7 @@ input[type="text"]:focus {
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.7);
-    z-index: 999;
+    z-index: 1000;
 }
 
 .popup-content {
