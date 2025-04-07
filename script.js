@@ -92,29 +92,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-// تأكد أن الكود لا يعمل قبل تحميل الصفحة
-document.addEventListener("DOMContentLoaded", function () {
-    const speedupBtn = document.getElementById("speedup-btn");
-
-    if (speedupBtn) {
-        speedupBtn.addEventListener("click", () => {
-            document.getElementById("speedup-popup").style.display = "block";
-        });
-    }
+// زر فتح نافذة خيارات التسريع
+document.getElementById("speed-options-btn").addEventListener("click", function () {
+    openPopup("speed-popup");
 });
 
-function showSpeedMessage(hours) {
-    closePopup('speedup-popup');
-    document.getElementById(`speed-msg-${hours}`).style.display = "block";
+// دالة فتح النوافذ
+function openPopup(id) {
+    document.getElementById(id).style.display = "block";
 }
 
+// دالة غلق النوافذ
 function closePopup(id) {
     document.getElementById(id).style.display = "none";
 }
+
+// دالة النسخ
 function copyToClipboard(id) {
     const input = document.getElementById(id);
     input.select();
-    input.setSelectionRange(0, 99999); // للهواتف
+    input.setSelectionRange(0, 99999); // للأجهزة المحمولة
     document.execCommand("copy");
     alert("تم نسخ العنوان!");
 }
